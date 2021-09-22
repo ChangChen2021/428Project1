@@ -17,6 +17,8 @@ public class timeTeller : MonoBehaviour
    
     void UpdateTime()
     {
-    timeTextObject.GetComponent<TextMeshPro>().text = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central Europe Standard Time")).ToString("HH:mm")+" (CET)";
+    DateTime original = System.DateTime.Now;
+    DateTime updated = original.Add(new TimeSpan(7,0,0));   
+    timeTextObject.GetComponent<TextMeshPro>().text = timeTextObject.GetComponent<TextMeshPro>().text = updated.ToString("h:mm ")+" (CET)";
     }
 }

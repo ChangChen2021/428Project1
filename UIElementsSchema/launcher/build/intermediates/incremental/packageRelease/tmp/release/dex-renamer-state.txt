@@ -1,0 +1,4 @@
+#Tue Sep 21 21:41:59 CDT 2021
+base.0=D\:\\GraduateSemester1\\Virtual and Augmented Reality\\Vuforia F21\\Vuforia F21\\UIElementsSchema\\launcher\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

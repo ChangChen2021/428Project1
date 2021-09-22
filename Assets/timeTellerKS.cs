@@ -17,6 +17,6 @@ public class timeTellerKS : MonoBehaviour
    
     void UpdateTime()
     {
-    timeTextObject.GetComponent<TextMeshPro>().text = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time")).ToString("HH:mm")+" (CST)";
+    timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("HH:mm")+" (CST)";
     }
 }
